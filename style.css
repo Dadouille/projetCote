@@ -1,0 +1,148 @@
+html, body { height: 100%; }
+body {
+  height: 100vh; 
+  background-image: url(resource/SVG/Wave.svg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container{
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  transform: translate(-1%);
+}
+
+.txt{
+  white-space: nowrap;
+  font-size: 200px;
+  font-family: 'espoirregular', sans-serif;
+  animation: scollTxt 25s linear infinite;
+}
+
+.t1{
+ color: black; 
+}
+
+.t2{
+color: black;
+}
+
+@keyframes scollTxt {
+  0%{
+    transform: translate(0, 0) ;
+  }
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
+
+h1{
+  font-family: 'espoirregular', sans-serif;
+  letter-spacing: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85px;
+  line-height: 1.1;
+  opacity: 0;
+  transform: translateY(-150px);
+  animation: apparition 0.4s 1.5s ease-in-out forwards;
+}
+
+.photohead{
+  width: 450px;
+  max-width: 450px;
+  min-width: 350px;
+  margin-top: -170px;
+  margin-left: auto ;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-150px);
+  animation: apparition 0.1s 1s ease-in-out forwards;
+}
+
+.middle-line {
+  height: 150px;
+  width: 4px;
+  background: black;
+  margin: 40px auto;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-150px);
+  animation: apparition 0.8s 2.0s ease-in-out forwards;
+}
+
+button {
+  font-family: 'espoirregular';
+  margin: 0 auto -50px;
+  display: block;
+  font-size: 65px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: transparent;
+  color: black;
+  padding: 16px 30px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-150px);
+  animation: apparition 0.6s 1.8s ease-in-out forwards;
+}
+
+@font-face {
+  font-family: 'espoirregular';
+  src: url('font/espoir-webfont.woff2') format('woff2'),
+       url('font/espoir-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.btn1 {
+  height: 100px;
+  width: 100px;
+  background: #A1A3AB ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: apparition 2.0s 3.0s ease-in-out forwards;
+}
+
+.icone{
+  width: 50px;
+}
+
+@keyframes apparition{
+100%{
+opacity: 1;
+transform: none;
+}
+}
+
+.planche{
+margin-left: auto ;
+margin-right: auto;
+display: block;
+text-align: center;
+width: 100%;
+}
+
+.debu{
+  font-size: 65px;
+  margin-top: 25px;
+}
+
+.exp{
+  font-size: 65px;
+  margin-top: 150px;
+}
